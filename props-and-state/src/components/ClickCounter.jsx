@@ -11,7 +11,7 @@ const ClickCounter = () => {
      <div> Click the button below to imcrement the counter</div>
      <button style={addStyle} onClick={ () => setCount(count + 1 )}>Add</button>
     
-     <button style={subStyle} onClick={ count => (count >= 0) ? setCount(count - 1 ): count}>Subtract</button>
+     <button style={subStyle} onClick={ () => (count > 0) ? setCount(count - 1 ): count}>Subtract</button>
     </div>);
 
 }
