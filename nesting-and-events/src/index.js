@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
 import TaskContainer from './components/TaskContainer';
+
 /*
 const taskList = [
   {"id":"task1","title":"Buy Milk","isComplete":true},
@@ -18,6 +19,7 @@ function App() {
       <Fragment>
         <h1 key="heading">Task List</h1>
         <TaskContainer>
+        <Task />
           {/* Task: Nesting Components - Add you tasks here: */}
         </TaskContainer>
       </Fragment>
