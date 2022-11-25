@@ -9,7 +9,13 @@ import Search from './components/Search';
 
 function App() {
   const [books] = useState(data);
-  
+  const [searchWord, setSearch] = useState('');
+   
+  async function findBooks(value){
+    const url =  `https://www.googleapis.com/books/v1/volumes?q=${value}h&filter=paid-ebooks&print-type=books&projection=lite&orderBy=newest&maxResults=10&startIndex=0`;
+  }
+
+
   function addBook(title){
     console.log(`The Book '${title}' was clicked`);
   }
@@ -21,7 +27,7 @@ function App() {
           <>   
               <Header />           
               <h2> Welcome to the Bookcase App</h2>
-              <Search />
+              <Search findBooks={findBooks} searchWord={searchWord} setSearch={setSearch}/>
               <BookList books={books} addBook={addBook} />
           </>
           } />

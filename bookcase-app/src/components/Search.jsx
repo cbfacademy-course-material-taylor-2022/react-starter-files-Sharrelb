@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-const Search = () =>{
+
+const Search = (props) =>{
     const [searchWord, setSearch] = useState('');
     const [hasSubmitted,setSubmitted] = useState(false);
 
@@ -9,10 +10,11 @@ const Search = () =>{
         setSubmitted(true);
       }
 
-    return <form>
+    return <form onSubmit={(e) => handleSubmit(e)}>
          <label>Search <input type="text" value={searchWord} onChange={(e) => { setSearch(e.target.value); setSubmitted(false) }} /></label>
          <input type="submit" value="Submit" onSubmit={handleSubmit} id="submit-button"/>
-         <p style ={{color:"red"}}><em>{searchWord && 'Key word Typed:' + searchWord}</em></p>
+        <p style ={{color:"red"}}><em>{props.searchWord && 'Key word Typed:' + searchWord}</em></p>
+
     </form>
 }
 
