@@ -4,6 +4,7 @@ import BookList from './components/BookList'
 import Header from './components/Header.';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import About from './About'
+import Search from './components/Search';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <>   
               <Header />           
               <h2> Welcome to the Bookcase App</h2>
+              <Search />
               <BookList books={books} addBook={addBook} />
           </>
           } />
