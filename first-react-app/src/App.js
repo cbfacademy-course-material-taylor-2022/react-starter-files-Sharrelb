@@ -11,7 +11,7 @@ function App() {
   return (
   <div className="App" >
     <h1 style={h1Style}>My React Page</h1>
-    <h2 className = "bio">This is my first React page.</h2>
+    <h2 className = "bio">This is my first React page....</h2>
  </div>
   );
 }
