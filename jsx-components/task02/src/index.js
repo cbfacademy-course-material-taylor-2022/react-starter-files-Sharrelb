@@ -4,15 +4,16 @@ import ReactDOM from 'react-dom/client';
 import MyForm from './Form';
 
 
+
 function App() {
- // return (
+  // return (
    //  <Profile name="Sharrel" bio=" Example of React node JSX"/>
  // );
 
-    return <div> <MyForm />   
-    <h1 id="Name"> </h1> 
-    <p id ="Bio"></p>
-    </div>       
+    return(
+    <div> 
+      <MyForm />        
+    </div>   )    
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

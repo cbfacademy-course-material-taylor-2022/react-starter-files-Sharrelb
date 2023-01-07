@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const name = "ShaRRel";
+const name = "Sharrel";
 
 function Profile(name) {
   if (name.toUpperCase() === "SHARREL") {
     return (
       <main id="content" role="main" className="base">
         <h1>{name}'s React Page</h1>
-        <p>Example of react JSX in action</p>
+        <p>I'm learning how to create react website's</p>
       </main>
     );
   } else {
