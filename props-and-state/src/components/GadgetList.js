@@ -8,7 +8,7 @@ const GadgetList = (props) => {
     <main>
       <h2>Headphones</h2>
       {props.items.map((item) => (
-      <div>
+      <div key={item.key}>             
         <p style={titleStyle} >{item.title}</p>
         <p style={priceStyle} >{item.price}</p>
         <img src={item.src} alt=''/>.

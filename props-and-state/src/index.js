@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import data from './models/headphones.json';
 import ClickCounter from './components/ClickCounter';
@@ -16,11 +16,12 @@ const App = () => {
 
   const [headphonesList] = useState(data);
 
-  return <section style={mainStyle}>
+  return (
+  <section style={mainStyle}>
     <h1>Electronics Store</h1>
-    <GadgetList items={headphonesList}/>
+    <GadgetList key= {headphonesList.toString()} items={headphonesList}/>
     <ClickCounter />
-  </section>;
+  </section>);
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

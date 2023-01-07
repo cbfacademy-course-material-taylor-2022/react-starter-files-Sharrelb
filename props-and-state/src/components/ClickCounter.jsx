@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const ClickCounter = () => {
-    const addStyle = {"background-color":"green"};
-    const subStyle = {"background-color":"red", "margin":"0px 250px 0px"};
+    const addStyle = {"backgroundColor":"green"};
+    const subStyle = {"backgroundColor":"red", "margin":"0px 250px 0px"};
     const [count, setCount] = useState(0);
 
     return(
