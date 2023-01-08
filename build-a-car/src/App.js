@@ -8,24 +8,26 @@ import Skateboard from "./component/Skateboard";
 import Wheel from './component/Wheel';
 
 function App() {
-  
+
+
   const showWheels = (numberOfWheels) => {
- 
+    
     const wheels = [];
-    for (let i = 0; i < numberOfWheels; i++) {
-      wheels.push(<Wheel key={i} />);
+    for (let i = 0; i < numberOfWheels ; i++) {
+      wheels.push(<Wheel />);
+      
     }
-    return wheels;
+     return wheels
   }
 
   return (
     <div className="App">
       <header className="App-header">
         <Car numberOfWheels="4" showWheel={showWheels}/>
-        <Bicycle numberOfWheels="2"/>
-        <Bus numberOfWheels = "6" />
-        <Truck numberOfWheels = "8"/>
-        <Skateboard numberOfWheels = "4"/>
+        <Bicycle numberOfWheels="2" showWheel={showWheels}/>
+        <Bus numberOfWheels ="6" showWheel={showWheels}/>
+        <Truck numberOfWheels ="8" showWheel={showWheels}/>
+        <Skateboard numberOfWheels ="4" showWheel={showWheels}/>
       </header>
     </div>
   );

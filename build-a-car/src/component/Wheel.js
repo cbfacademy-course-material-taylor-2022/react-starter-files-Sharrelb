@@ -2,7 +2,7 @@ import React from "react"
 
 function Wheel(){
 
-    return <img src= "../imgs/wheel.png" alt="Wheel"></img>
+    return <img src= "../imgs/wheels.png" alt="Wheel"></img>
 
 }
 
