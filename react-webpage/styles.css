@@ -1,0 +1,15 @@
+.main-button{
+    background-color: #3392e4;
+    color: #fff;
+    border: 0;
+    padding: 0px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.hello {
+    color: pink;
+    background-color: black;
+    text-align: center;
+}
